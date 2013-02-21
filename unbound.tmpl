@@ -1,0 +1,5 @@
+# Allow Pingdom monitoring hosts to query a Unbound DNS resolver
+{{range .Hosts}}
+# {{.Title}}
+access-control: {{.IP}}/32
+{{end}}
