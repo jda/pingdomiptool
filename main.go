@@ -80,12 +80,13 @@ func main() {
 	
 	out := os.Stdout
 	if *outfn != "" {
-		out, err := os.Create(*outfn)
+		outF, err := os.Create(*outfn)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "Error opening output file: %v\n", err)
 			os.Exit(2)
 		}
-		defer out.Close()
+		defer outF.Close()
+		out = outF
 	}
 	
 	err = tmpl.Execute(out, tHosts)
