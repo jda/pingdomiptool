@@ -1,12 +1,3 @@
-type Host struct {
-	Title   string `xml:"title"`
-	Descr   string `xml:"description"`
-	IP      string `xml:"pingdom ip"`
-	Host    string `xml:"pingdom hostname"`
-	Country string `xml:"pingdom country"`
-	City    string `xml:"pingdom city"`
-	Status  string `xml:"pingdom state"`
-}
 Example showing all possible template fields
 
 {{range .Hosts}}
