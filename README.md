@@ -28,6 +28,6 @@ If you run pingdomiptool with no arguments it will print a list of Pingdom IPs t
 
 {{range .Hosts}} through {{end}} is repeated for every host. You can use any of the above attributes in your template.
 
-There are a couple example templates included:
-+ [IPTables commands](iptables.tmpl)
+A couple of examples are included:
++ [IP Tables commands](iptables.tmpl)
 + [Unbound Resolver access control](unbound.tmpl)
